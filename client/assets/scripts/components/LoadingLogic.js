@@ -1,3 +1,8 @@
+// Compatible with v1.5.0+
+if (!cc.loader.loadResAll) {
+    cc.loader.loadResAll = cc.loader.loadResDir;
+}
+
 cc.Class({
     extends: cc.Component,
 
