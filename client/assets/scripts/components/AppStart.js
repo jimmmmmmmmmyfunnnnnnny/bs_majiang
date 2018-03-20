@@ -111,7 +111,7 @@ cc.Class({
         var FADE_TIME = 500;
         this._splash = cc.find("Canvas/splash");
         if(true || cc.sys.os != cc.sys.OS_IOS || !cc.sys.isNative){
-            this._splash.active = false;
+            this._splash.active = true;
             if(this._splash.getComponent(cc.Sprite).spriteFrame == null){
                 callback();
                 return;
